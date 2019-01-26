@@ -22,3 +22,7 @@ def result(request):
             word_dic[word]=1
 
     return render(request, 'result.html', {'full': text, 'total': len(words), 'dic': word_dic.items()})
+
+def me(request):
+    return render(request, 'me.html')
+    
